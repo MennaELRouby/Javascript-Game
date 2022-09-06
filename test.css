@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.first_row {
+  content: "<h1>100</h1>";
+}
+
+.page_holder {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  background-color: #013766;
+}
+
+.box_holder {
+  position: relative;
+  width: 17vw;
+  height: 80%;
+  margin: auto;
+  background-color: #c30101;
+  z-index: 99;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.que_page {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #22272c;
+  left: -100%;
+  transition: 0.6s;
+}
+
+.que_page h1 {
+  color: white;
+}
+
+.que_no {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.que {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.closebtn {
+  margin: 2vw;
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#que_1 .box_holder:hover {
+  background-color: #f04b4b;
+}
+
+.que_no_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.row {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+}
+
+.first {
+  top: 0%;
+}
+
+.first .que_page {
+  position: absolute;
+  top: -0vh;
+}
+
+.second {
+  top: 20vh;
+}
+
+.second .que_page {
+  position: absolute;
+  top: -20vh;
+}
+
+.third {
+  top: 40vh;
+}
+
+.third .que_page {
+  position: absolute;
+  top: -40vh;
+}
+
+.fourth {
+  top: 60vh;
+}
+
+.fourth .que_page {
+  position: absolute;
+  top: -60vh;
+}
+
+.fifth {
+  top: 80vh;
+}
+
+.fifth .que_page {
+  position: absolute;
+  top: -80vh;
+}
